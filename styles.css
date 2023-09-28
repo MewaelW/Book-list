@@ -2,10 +2,22 @@ body {
     font-family: Arial, Sans-serif;
     margin: 0;
     padding: 0;
+    background-color: rgb(161, 159, 159);
 }
 header {
     background-color: #333;
     padding: 0;
+    text-align:  right;
+}
+
+h1, p {
+    text-align: center;
+    
+}
+
+#home-section {
+    margin-top: 6rem;
+
 }
 
 nav ul {
@@ -38,3 +50,7 @@ main {
 margin-bottom: 10px;
 }
 
+button {
+    background-color: #333;
+    color: beige;
+}

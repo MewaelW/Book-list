@@ -7,7 +7,7 @@ function showHome() {
     <p>This section displays your personal book list</p>
     <div id="home-section">
     <h2>Add a Book</h2>
-    <input type="text" id="book-input" placeholder="Enter book name">
+    <input type="text" id="book-input" placeholder="Add a book here">
     <button onclick="addBook()">Add Book</button>
   </div>
     `;
