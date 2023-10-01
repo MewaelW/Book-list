@@ -19,11 +19,27 @@ function showBooks() {
     content.innerHTML = `
     <h1>Book List</h1>
     <ul class="book-list">
-        ${books.map(book => `<li> ${book}</li>`).join('')}
+    ${books.map((book, index) => `
+    <li class="book-list">${book}
+      <button class ="remove-button" onclick="removeBook(${index})">Remove</button>
+    </li>
+  `).join('')}
     </ul>
     `
 
 }
+
+function showContacts() {
+    const content = document.getElementById('content');
+    content.innerHTML = `
+    
+      <h1>Contact Information</h1>
+      <ul>
+        <li class="contact">Email: example@example.com</li>
+        <li class="contact">Phone: 123-456-7890</li>
+      </ul>
+    `;
+  }
 
 function addBook(){
     const input = document.getElementById('book-input');
@@ -32,7 +48,13 @@ function addBook(){
     if (bookName !== '') {
         books.push(bookName);
         input.value = '';
-        showBooks();
+        showHome();
+        window.prompt('Book added to list!')
     }
 }
+function removeBook(index) {
+    books.splice(index, 1);
+    showBooks();
+  }
+
 showHome();

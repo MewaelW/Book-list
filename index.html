@@ -3,29 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Awesome Books</title>
     <link rel="stylesheet" href="styles.css">
    
 </head>
 <body>
     <header>
+      <h1 class="header">Awesome Books</h1>
         <nav>
             <ul>
-              <li><a href="#" onclick="showHome()">Home</a></li>
-              <li><a href="#" onclick="showBooks()">Books</a></li>
+              <li><a href="#" onclick="showHome()">Add Book</a></li>
+              <li><a href="#" onclick="showBooks()">Book List</a></li>
+              <li><a href="#" onclick="showContacts()">Contacts</a></li>
             </ul>
           </nav>
     </header>
     <main id="content">
+      
         <h1>Welcome to your Book List</h1>
             <p>This section displays your personal book list</p>
             <div id="home-section">
                 <h2>Add a Book</h2>
                 <input type="text" id="book-input" placeholder="Add a book">
-                <button onclick="addBook()">Add Book</button>
+                <button class="add-book" onclick="addBook()">Add Book</button>
               </div>
+            
                              
     </main>
      <script src="index.js"></script>   
 </body>
+<footer><h2>Copyright</h2></footer>
 </html>
